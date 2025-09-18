@@ -137,20 +137,88 @@
    
 <br>
 	
-    <!-- Blog Header -->
-    <section class="blog-header">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 text-center"> <!-- Changed to col-md-12 as the bar itself is now a fixed width -->
-                    <h1 class="display-4">My Blog & Recent Activities</h1>
-                    <p class="lead">Sharing my journey, insights, and recent work in geospatial analysis and urban planning.</p>
-                </div>
+<!-- Blog Header -->
+<section class="blog-header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h1 class="display-4 animated-text">My Blog & Recent Activities</h1>
+                <p class="lead typewriter-text">Sharing my journey, insights, and recent work in geospatial analysis and urban planning.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+    /* Blog Header - Matching Blog Post Style */
+    .blog-header {
+        background: white;
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto 3rem;
+        color: #000;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Text Animation Styles */
+    .animated-text {
+        animation: fadeInUp 1s ease-out;
+        color: #000;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .typewriter-text {
+        overflow: hidden;
+        border-right: 2px solid #ffbd39;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        color: #555;
+        font-size: 1.25rem;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #ffbd39; }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .typewriter-text {
+            white-space: normal;
+            border-right: none;
+            animation: none;
+        }
+        
+        .blog-header {
+            padding: 1.5rem;
+            margin: 0 auto 2rem;
+        }
+    }
+</style>
 
 
-
+    <!-- Blog Content -->
 
 
    <div class="row justify-content-center">
