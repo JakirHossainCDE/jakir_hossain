@@ -140,9 +140,9 @@
 	
 <!-- Blog Header -->
 <section class="blog-header">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 text-center">
+    <div class="container-fluid"> <!-- Changed to container-fluid for full width -->
+        <div class="row">
+            <div class="col-12 text-center"> <!-- Changed to col-12 for full width -->
                 <h1 class="display-4 animated-text">My Blog & Recent Activities</h1>
                 <p class="lead typewriter-text">Sharing my journey, insights, and recent work in geospatial analysis and urban planning.</p>
             </div>
@@ -151,6 +151,18 @@
 </section>
 
 <style>
+    /* Blog Header - Full Width */
+    .blog-header {
+        background: white;
+        padding: 3rem 0; /* Increased vertical padding for better proportion */
+        color: #000;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        margin-bottom: 3rem;
+        width: 100%; /* Ensure full width */
+    }
+
+	
 
     /* Text Animation Styles */
     .animated-text {
